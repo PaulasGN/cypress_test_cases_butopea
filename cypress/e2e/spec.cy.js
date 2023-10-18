@@ -38,12 +38,12 @@ describe('Check New Products Tab', () => {
   it('Should click on New Products tab and extract product information', () => {
     cy.visit('https://butopea.com'); // Replace with the actual URL
 
-    // Click on the "New Products" tab (replace '.new-products-tab' with the actual selector)
+    // Click on the "New Products" tab 
   //   cy.get('.new-products-tab').click();
 
     cy.get('#new-arrivals').should('exist');
 
-    // Wait for the tab's content to load (you can adjust the timeout as needed)
+    // Wait for the tab's content to load 
     cy.get('.product-listing', { timeout: 10000 }).should('exist');
 
     // Check if the product list contains items
